@@ -1,0 +1,388 @@
+/* agregaremos fuentes */
+.clearfix::before,
+.clearfix::after {
+  content: " ";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+@font-face
+{
+
+    font-family: "fuente";
+    src: url(fonts/nevis.ttf);
+}
+
+
+a
+{
+    color: #529125;
+    text-decoration: none;
+}
+
+a:visited{
+color: #529125;
+}
+
+a:hover
+{
+    color: #285616;
+}
+
+body
+{
+
+    background-image: url(img/paven.png);
+    font-family: sans-serif;
+}
+
+/* forumularios */
+
+input[type="textt"],
+input[type="password"],
+input[type="email"],
+select
+{
+    border: 1px solid #c9c9c9;
+    box-shadow: 0px 0px 2px #cccccc inset;
+    padding: 1px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    color: gray;
+    transition: all 300ms;
+}
+
+input[type="textt"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+select:focus
+{
+
+border: 1px solid #70b231;
+color: black;
+
+}
+
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+button
+{
+    display: block;
+    border-radius: 3px;
+    width: 60px;
+    padding: 3px;
+    background: #70b231;
+    border: 1px solid grey;
+    cursor: pointer;
+    color: white;
+}
+
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+button:hover
+{
+ 
+    box-shadow: 0px 0px 2px gray;
+}
+
+input[type="button"]:active,
+input[type="submit"]:active,
+input[type="reset"]:active,
+button:active
+{
+ 
+    box-shadow: 0px 0px 1px #cccccc;
+}
+
+.cabecera
+{
+
+    min-width: 1024px;
+    width: 100%;
+    height: 250px;
+    margin: 0 auto;
+    font-family:"Nevis";
+    margin-bottom: 55px;
+}
+
+.cabecera a
+{
+    text-decoration: none;
+    
+}
+
+.cabecera .logo
+{
+width: 770px;
+margin: 0 auto;
+padding: 20px;
+
+}
+
+.cabecera .logo img
+{
+
+    display:block;
+    text-align: center;
+    margin: 0 auto;
+    width: 140px;
+}
+
+.cabecera h1
+{
+    text-align: center;
+    font-size: 40px;
+    color: #70b231;
+   font-family:"fuente";
+   text-transform: uppercase;
+   text-shadow: 0px 4px 1px #333333;
+   transition: all 300ms;
+
+}
+
+.cabecera h1:hover
+{
+
+    text-shadow: 0px 4px 1px #333333,0px 6px 4px #70b231;
+
+
+}
+
+.cabecera a
+
+{
+    color: #70b231;
+}
+
+/* barra de navecacion */
+
+.barra
+{
+
+    width: 100%;
+    background-color: #333333;
+    color: white;
+    height: 40px;
+    font-family: sans-serif,Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    box-shadow: 0px 0px 2px gray;
+}
+
+.barra ul
+{
+
+    list-style: none;
+    margin: 0 auto;
+    width: 1090px;
+}
+
+.barra > ul >li
+{
+    line-height: 40px;
+    float: left;
+    border-right: 1px solid gray;
+    transition: all 300ms;
+
+    
+}
+
+.barra a{
+    
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 0px 20px;
+
+}
+
+.barra a:first-child
+{
+
+    border-left: 1px solid gray;
+}
+
+.barra li:hover
+{
+
+    background-color: #70b231;
+    box-shadow: 0px 0px 4px green inset;
+    
+
+}
+
+/* menu desplegable */
+
+.barra ul li ul
+{
+    display: none;
+    /* position: absolute; */
+    color: white;
+    text-align: left;
+    width: 160px;
+    box-shadow: 0 2px 2px gray;
+    z-index:1;
+}
+
+.barra ul li:hover ul
+{
+    display: block;
+}
+
+.barra ul li:hover ul li
+{
+    background-color: cadetblue;
+    border-bottom: 1px solid #d6d6d6;
+    padding: 6px;
+    line-height: 25px;
+}
+
+.barra ul li:hover ul li:hover
+{
+    box-shadow: 0pc 0px 15px violet inset;
+}
+
+/* contenido */
+.contenido
+{
+
+    width: 1250px;
+    min-height: 1100px;
+    margin: 0 auto;
+    position: relative;
+    
+}
+
+/* barra lateral del contenido */
+.aside,.pequeño
+{
+  
+    width:250px;
+    float: left;
+    margin: 30px;
+    background-color: white;
+    border: 1px solid #cccccc;
+    box-shadow: 0px 2px 2px #cccccc;
+    font-family: sans-serif;
+}
+
+.pequeño
+{
+    width: 230px;
+    padding: 10px;
+    font-size: 10px;
+    font-family: sans-serif;
+    position: absolute;
+    top: 900px;
+    left: 0;
+    
+}
+
+
+.widget
+{
+display: block;
+width: 180px;
+margin: 0px auto;
+padding: 8px;
+padding-left: 10px;
+padding-right: 10px;
+font-size: 16px;
+border-bottom: 1px dashed grey;
+
+    
+} 
+.widget:last-child
+{
+
+    margin-bottom: 20px;
+    
+}
+
+.aside h3
+
+{
+    display: block;
+    color: #333333;
+    width: 100%;
+    text-align: center;
+    padding: 2px 0;
+    background: #f2f3f2;
+    border: 1px solid #cccccc;
+    border: 0 none;
+}
+
+/* formularios varra lateral */
+
+.aside div label,
+.aside div input[type="text"],
+.aside div input[type="email"],
+.aside div input[type="password"],
+.aside div a
+{
+
+    display: block;
+    width: 95%;
+    margin: 2px 0px;
+}
+
+.boton
+{
+    display: block;
+    text-align: center;
+}
+.aside li
+{
+
+    margin: 8px 5px 20px 0px;
+    list-style: none;
+}
+
+.red
+
+{
+
+
+color: #9b2424 !important;
+
+}
+
+.blue
+
+{
+
+    color: #0c73f2 !important;
+}
+
+
+/* //secciones */
+
+.sections
+{
+
+    float: right;
+    width: 75%;
+}
+
+.sections{
+    font-size: 25px;
+    margin-bottom: 5px;
+    
+}
+
+.frontend
+{
+    background-color: #c0d1e9;
+}
+
+.sections p
+{
+    border-bottom: 1px solid #333333;
+}
+
+/* mi primer proyecto en css */
+/* el inicio de algo grandisimo */
